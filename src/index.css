@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth; /* Activa el desplazamiento suave */
+}
+
+h1,h2{
+  color: #245501;
+  font-weight: bold;
+}
+
+body.dark h1, body.dark h2 {
+  color: #73A942; /* Color en modo oscuro */
+}
+
+h3, h4, h5, h6, p {
+    color: #245501; /* Color en modo claro */
+}
+
+body.dark h3, body.dark h4, body.dark h5, body.dark h6, body.dark p {
+    color: #AAD576; /* Color en modo oscuro */
+}
+
+body.dark .btn-primary {
+  background-color: #538D22; /* Botón principal */
+  color: white; /* Texto del botón */
+}
+
+.btn-primary:hover {
+  color: white;
+}
+
+body.dark .btn-primary:hover {
+  background-color: #73A942; /* Efecto hover */
+  color: white;
+}
+
+.btn-primary {
+  background-color: #538D22; /* Botón principal */
+  color: white; /* Texto del botón */
+}
+
+.btn-secondary {
+  background-color: #73A942; /* Fondo del botón secundario */
+  color: #245501; /* Texto del botón en modo claro */
+}
+
+.btn-secondary:hover {
+  background-color: #538D22; /* Efecto hover en modo claro */
+  color: white;
+}
+
+/* Estilos para el botón secundario en modo oscuro */
+body.dark .btn-secondary {
+  background-color: #1A4301; /* Fondo del botón en modo oscuro */
+  color: #AAD576; /* Texto del botón en modo oscuro */
+}
+
+body.dark .btn-secondary:hover {
+  background-color: #73A942; /* Efecto hover en modo oscuro */
+  color: white; /* Texto del botón en hover oscuro */
+}
+
+a:hover {
+  color: #538D22; /* Color del texto en hover en modo claro */
+}
+
+body.dark a:hover {
+  color: #73A942; /* Color del texto en hover en modo oscuro */
+}
+
+hr {
+  border: none; /* Elimina el borde por defecto */
+  height: 2px; /* Altura del separador */
+  background-color: #73A942; /* Color del separador en modo claro */
+  margin: 2rem 0; /* Espaciado vertical */
+}
+
+body.dark hr {
+  background-color: #AAD576; /* Color del separador en modo oscuro */
+}
+
