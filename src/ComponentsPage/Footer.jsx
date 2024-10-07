@@ -6,7 +6,7 @@ export const Footer = () => {
         {/* Logo y nombre */}
         <div className="flex flex-col items-center w-full mb-8 md:items-start md:mb-0 md:w-1/3">
           <div className="flex items-center gap-4">
-            <img className="w-12 h-12" src="public/logo.png" alt="Logo DevBlocks" />
+            <img className="w-12 h-12" src="/public/logo.png" alt="Logo DevBlocks" />
             <div className="text-4xl font-semibold text-gray-800 dark:text-gray-200">DevBlocks</div>
           </div>
           <p className="mt-4 text-center text-gray-600 dark:text-gray-300 md:text-left">

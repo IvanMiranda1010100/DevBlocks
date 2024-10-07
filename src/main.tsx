@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 // Import the layouts
 import PageWelcome from "./Pages/PageWelcome/PageWelcome.jsx";
 import PageComponents from "./Pages/PageComponents/PageComponents.jsx";
+import {NotFound} from "./Pages/NotFound.jsx";
 
 // Import the components
 
@@ -17,8 +18,16 @@ const router = createBrowserRouter([
     // { path: "*", element: <NotFound /> },
   },
   {
-    path:'/components',
+    path:'/docs/',
     element:<PageComponents/>,
+  },
+  {
+    path:'/docs/:item',
+    element:<PageComponents/>,
+  },
+  {
+    path:'*',
+    element:<NotFound/>,
   }
 ]);
 

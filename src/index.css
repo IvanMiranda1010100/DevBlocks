@@ -24,6 +24,15 @@ h3, h4, h5, h6, p {
     color: #245501; /* Color en modo claro */
 }
 
+p{
+  font-size: clamp(1rem, 2vw + 1rem , 1.5rem);
+}
+
+
+h1, h2, h3, h4, h5, h6, p{
+  text-wrap: balance;
+}
+
 body.dark h3, body.dark h4, body.dark h5, body.dark h6, body.dark p {
     color: #AAD576; /* Color en modo oscuro */
 }
@@ -68,11 +77,11 @@ body.dark .btn-secondary:hover {
   color: white; /* Texto del botón en hover oscuro */
 }
 
-a:hover {
+a:hover, link:hover {
   color: #538D22; /* Color del texto en hover en modo claro */
 }
 
-body.dark a:hover {
+body.dark a:hover, body.dark link:hover {
   color: #73A942; /* Color del texto en hover en modo oscuro */
 }
 

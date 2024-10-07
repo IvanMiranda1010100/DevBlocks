@@ -3,6 +3,7 @@ import { PageLayout } from '@Layouts/Page.jsx'
 import {SectionInitial} from './Sections/SectionInitial.jsx'
 import {SectionComponents} from './Sections/SectionComponents.jsx'
 import {SectionFinal} from './Sections/SectionFinal.jsx'
+import { Compatibility } from './Components/Compatibility.jsx'
 
 function PageWelcome() {
 
@@ -11,6 +12,7 @@ function PageWelcome() {
     <PageLayout>
       <div className='py-5 p-2'>
           <SectionInitial/>
+          <Compatibility/>
           <SectionComponents/>
           <SectionFinal/>
       </div>
